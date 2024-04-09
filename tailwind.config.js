@@ -13,6 +13,12 @@ export default {
       white: "#FFFFFF",
       black: "000000",
       midnight: "#011126",
+      night:{
+        800: '#012340'
+      },
+      purple:{
+        500: '#792BDB'
+      },
       blue: {
         400: "#1d4ed8",
         700: "#011C40",

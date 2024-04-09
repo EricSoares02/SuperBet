@@ -9,7 +9,7 @@ definePageMeta({
 </script>
 
 <template>
-    <h1>main</h1>
+    <h1>Golden Cat Page</h1>
 
-    <a href="/login">click</a> 
+    <a href="/">click</a> 
 </template>
