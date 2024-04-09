@@ -21,9 +21,3 @@ const style = NavButtonsIsActive(route.fullPath.split('/')[1], props.urlPage.sli
     </li>
 
 </template>
-
-
-<style>
-
-
-</style>
