@@ -10,6 +10,7 @@ export default {
   ],
   theme: {
     colors: {
+      transparent: 'transparent',
       white: "#FFFFFF",
       black: "000000",
       midnight: "#011126",

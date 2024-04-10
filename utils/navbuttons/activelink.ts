@@ -2,8 +2,7 @@
 
 export default function NavButtonsIsActive(currentUrl: string, urlPage: string){
 
-    console.log(currentUrl, urlPage)
-    const style = "w-full h-1/6 flex items-center pl-9 gap-5 p-4 rounded-lg text-sm";
+    const style = "w-full h-20 flex items-center pl-3.5 gap-5 p-4 rounded-lg text-sm";
 
 
     if (currentUrl === urlPage) {

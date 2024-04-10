@@ -20,7 +20,7 @@ const buttonSettings = {
 
 <template>
   <div class="w-screen h-screen bg-midnight block text-white">
-    <header class="w-full h-20 flex justify-between shadow-lg ">
+    <header class="w-full h-20 fixed top-0 flex justify-between shadow-lg">
 
       <div class="w-1/3 h-full flex items-center justify-center">
         <div class="w-4/5 h-full flex items-center justify-start">
@@ -39,13 +39,13 @@ const buttonSettings = {
       </div>
 
     </header>
-    <main class="h-auto min-h-screen flex absolute">
-      <aside class="w-64 fixed left-0 flex flex-col items-center pt-2">
+    <main class="max-h-screen flex absolute top-24">
+      <aside class="w-64 h-full max-h-screen fixed left-0 flex flex-col items-center pt-2 shadow-xl">
         <div class="w-5/6 h-12 flex gap-3 items-center justify-evenly rounded-xl px-2 mb-2 bg-night-800">
           <button class="w-2/4 h-4/5 rounded-lg flex items-center justify-evenly text-sm font-semibold bg-purple-500">Casino</button>
           <button class="w-2/4 h-4/5 rounded-lg flex items-center justify-evenly text-sm font-semibold">Games</button>
         </div>
-        <nav class="w-5/6 h-2/5 flex flex-col rounded-xl">
+        <nav class="w-5/6 h-2/6 flex flex-col rounded-xl">
           <ul class="w-full h-full flex flex-col gap-1">
             
 
@@ -54,7 +54,7 @@ const buttonSettings = {
             </NavButtons>
 
             <NavButtons name-page="Golden Cat" url-page="/golden-cat">
-              <img src="/assets/icons/goldCat.png" alt="Gold Cat" class="w-6 h-6 object-contain">
+              <img src="/assets/icons/goldCat.png" alt="Gold Cat" class="w-10 h-10 object-contain">
             </NavButtons>
 
             <NavButtons name-page="Wallet" url-page="/wallet">
@@ -68,7 +68,7 @@ const buttonSettings = {
           </ul>
         </nav>
       </aside>
-      <div class="w-5/6 relative left-80">
+      <div class="relative left-80 w-screen max-w-[90rem] h-full max-h-screen">
           <slot/>
       </div>   
     </main>
