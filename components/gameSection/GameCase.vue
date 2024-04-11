@@ -9,7 +9,7 @@ defineProps<{
 </script>
 
 <template>
- <div class="w-44 h-full rounded-2xl relative flex justify-center bg-no-repeat bg-test">
+ <div class="w-44 h-full rounded-2xl relative flex justify-center bg-no-repeat cursor-pointer bg-test hover:w-48 hover:h-[265px] duration-700">
     <img :src="game.photo" alt="game" class="h-full w-full rounded-2xl object-cover">
    <span class="font-extrabold text-xl absolute bottom-10 text-nowrap">{{ game.name.toUpperCase() }}</span>
  </div>

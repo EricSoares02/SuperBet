@@ -57,6 +57,10 @@ const buttonSettings = {
               <img src="/assets/icons/goldCat.png" alt="Gold Cat" class="w-10 h-10 object-contain">
             </NavButtons>
 
+            <NavButtons name-page="Games" url-page="/games">
+              <GameIcon :color="buttonSettings.color" :size="buttonSettings.size"/>
+            </NavButtons>
+
             <NavButtons name-page="Wallet" url-page="/wallet">
               <WalletIcon :color="buttonSettings.color" :size="buttonSettings.size"/>
             </NavButtons>

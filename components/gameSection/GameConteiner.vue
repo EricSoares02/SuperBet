@@ -46,9 +46,7 @@ const games: GamesType[] = [
     <div class="w-full h-1/6 flex items-center justify-between px-3">
       <h1 class="font-bold text-lg">{{ sectionName }}</h1>
      <div class="flex gap-8">
-        <button><</button>
-        <button>see more</button>
-        <button>></button>
+        <HomeMiniButton href="/games" title="See more"/>
      </div>
     </div>
     <div class="w-full h-5/6 flex gap-8 px-10">

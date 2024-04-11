@@ -73,11 +73,11 @@ const topLeaders: Array<TopLeaderType> = [
           <h1 class="text-lg font-bold text-nowrap">TOP LEADERS</h1>
           <span class="bg-white mx-4 h-2/4 w-px text-[1px]">l</span>
           <p class="text-xs">
-            The top is updated every day. Participate in the lottery and take
+            The top is updated whenever someone earns a fortune. Participate in the lottery and take
             first place!
           </p>
         </div>
-        <button>See more</button>
+        <HomeMiniButton href="/games" title="Lottery"/>
       </div>
 
       <div class="w-full h-3/4 flex items-center">
