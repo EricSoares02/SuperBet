@@ -14,6 +14,7 @@ export default {
       white: "#FFFFFF",
       black: "000000",
       midnight: "#011126",
+      slider: '#FFCC00',
       night:{
         800: '#012340'
       },
@@ -27,10 +28,8 @@ export default {
       gray:{
         200: '#F2F2F2',
         300: '#D9D9D9',
-        400: '#8C8C8C'
-      },
-      text: {
-        gray: "#374151",
+        400: '#8C8C8C',
+        500:"#374151"
       },
       test: "#DE6368",
     },

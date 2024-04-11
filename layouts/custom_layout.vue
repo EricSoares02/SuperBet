@@ -45,7 +45,7 @@ const buttonSettings = {
           <button class="w-2/4 h-4/5 rounded-lg flex items-center justify-evenly text-sm font-semibold bg-purple-500">Casino</button>
           <button class="w-2/4 h-4/5 rounded-lg flex items-center justify-evenly text-sm font-semibold">Games</button>
         </div>
-        <nav class="w-5/6 h-2/6 flex flex-col rounded-xl">
+        <nav class="w-5/6 h-[500px] flex flex-col rounded-xl">
           <ul class="w-full h-full flex flex-col gap-1">
             
 
