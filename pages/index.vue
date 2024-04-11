@@ -1,92 +1,92 @@
 <script setup lang="ts">
-import TopLeaders from '~/components/topLeader/TopLeaders.vue';
-import type { TopLeaderType } from '~/modules/types/topLeaders';
-
+import TopLeaders from "~/components/topLeader/TopLeaders.vue";
+import type { TopLeaderType } from "~/modules/types/topLeaders";
 
 definePageMeta({
-  middleware: 'auth',
-  layout: 'custom-layout'
-})
+  middleware: "auth",
+  layout: "custom-layout",
+});
 
 const topLeaders: Array<TopLeaderType> = [
-{
-  name: 'Marcinha',
-  totalWin: '$744',
-  lastWin: '$244',
-  photo: 'https://lh3.google.com/u/0/d/1RQE0Y9X3m6SNlxJ3z7aCdN29uJ84m6Zc'
-}, 
-{
-  name: 'Everaldo',
-  totalWin: '$744',
-  lastWin: '$244',
-  photo: 'https://lh3.google.com/u/0/d/1RQE0Y9X3m6SNlxJ3z7aCdN29uJ84m6Zc'
-},
-{
-  name: 'Davi',
-  totalWin: '$744',
-  lastWin: '$244',
-  photo: 'https://lh3.google.com/u/0/d/1RQE0Y9X3m6SNlxJ3z7aCdN29uJ84m6Zc'
-},
-{
-  name: 'Giselle',
-  totalWin: '$744',
-  lastWin: '$244',
-  photo: 'https://lh3.google.com/u/0/d/1RQE0Y9X3m6SNlxJ3z7aCdN29uJ84m6Zc'
-},
-{
-  name: 'Eu',
-  totalWin: '$744',
-  lastWin: '$244',
-  photo: 'https://lh3.google.com/u/0/d/1RQE0Y9X3m6SNlxJ3z7aCdN29uJ84m6Zc'
-},
+  {
+    name: "Marcinha",
+    totalWin: "$744",
+    lastWin: "$244",
+    photo: "https://lh3.google.com/u/0/d/1RQE0Y9X3m6SNlxJ3z7aCdN29uJ84m6Zc",
+  },
+  {
+    name: "Everaldo",
+    totalWin: "$744",
+    lastWin: "$244",
+    photo: "https://lh3.google.com/u/0/d/1RQE0Y9X3m6SNlxJ3z7aCdN29uJ84m6Zc",
+  },
+  {
+    name: "Davi",
+    totalWin: "$744",
+    lastWin: "$244",
+    photo: "https://lh3.google.com/u/0/d/1RQE0Y9X3m6SNlxJ3z7aCdN29uJ84m6Zc",
+  },
+  {
+    name: "Giselle",
+    totalWin: "$744",
+    lastWin: "$244",
+    photo: "https://lh3.google.com/u/0/d/1RQE0Y9X3m6SNlxJ3z7aCdN29uJ84m6Zc",
+  },
+  {
+    name: "Eu",
+    totalWin: "$744",
+    lastWin: "$244",
+    photo: "https://lh3.google.com/u/0/d/1RQE0Y9X3m6SNlxJ3z7aCdN29uJ84m6Zc",
+  },
 ];
-
 </script>
 
 <template>
-    <div id="homeDiv" class="w-11/12 h-[52rem] max-h-svh block overflow-y-scroll">
-
-      <section class="w-full h-80 mb-2">
-        oi
-      </section>
-
-
-      <section class="w-full h-72 mb-2">
-        <div class="w-full h-1/3 flex items-center justify-between px-3">
-          <div class="flex w-1/3 h-full  items-center justify-between">
-            <h1 class="text-lg font-bold text-nowrap">TOP LEADERS</h1>
-            <span class="bg-white mx-4 h-2/4 w-px text-[1px]">l</span>
-            <p class="text-sm">The top is updated every day. Participate in the lottery and take first place!</p>
-          </div>
-          <button>See more</button>
+  <div id="homeDiv" class="w-11/12 h-[52rem] max-h-svh block overflow-y-scroll">
+    <section class="w-full h-80 mb-10">
+      <div class="w-full h-full bg-slider rounded-3xl flex">
+        <div class="w-1/2 h-full flex flex-col gap-4 p-14">
+          <h1 class="font-extrabold text-2xl">See the golden cat <br>and try your luck!</h1>
+          <p class="font-normal text-sm"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere soluta quod fugit sed tempore, deleniti repellat, quidem in est iste exercitationem libero doloremque voluptates eligendi beatae ipsam repellendus reprehenderit hic?</p>
+          <a href="/golden-cat" class="font-semibold rounded-full w-2/5 h-1/6 bg-blue-400 flex items-center justify-center cursor-pointer">Golden Cat</a>
         </div>
-
-        <div class="w-full h-2/3 flex items-center">
-            <ul class="w-full h-full flex  gap-6">
-              <TopLeaders :leader="topLeaders"/>
-            </ul>
+        <div class="w-1/2 h-full flex items-end justify-end">
+          <img src="/assets/icons/goldCat.png" alt="Golden Cat" class="w-2/4 h-full object-contain ">
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="w-full h-[50rem]">
-        <div class="w-full h-1/6 flex items-center p-10">
-          <h1 class="text-xl font-bold text-nowrap">Game Section</h1>
+    <section class="w-full h-72 mb-2">
+      <div class="w-full h-1/3 flex items-center justify-between px-3">
+        <div class="flex w-1/3 h-full items-center justify-between">
+          <h1 class="text-lg font-bold text-nowrap">TOP LEADERS</h1>
+          <span class="bg-white mx-4 h-2/4 w-px text-[1px]">l</span>
+          <p class="text-xs">
+            The top is updated every day. Participate in the lottery and take
+            first place!
+          </p>
         </div>
-        <div class="w-full h-5/6 bg-blue-400">
+        <button>See more</button>
+      </div>
 
-        </div>
-      </section>
+      <div class="w-full h-2/3 flex items-center">
+        <ul class="w-full h-full flex gap-6">
+          <TopLeaders :leader="topLeaders" />
+        </ul>
+      </div>
+    </section>
 
-    </div>
+    <GameConteiner section-name="Casino Games"/>
+    <GameConteiner section-name="Casino Games"/>
+  </div>
 </template>
 
 <style>
-
-#homeDiv{
+#homeDiv {
   :-webkit-scrollbar {
-  display: none;
+    display: none;
   }
-  -ms-overflow-style: none;  
-  scrollbar-width: none;  
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 </style>
