@@ -41,9 +41,9 @@ const buttonSettings = {
     </header>
     <main class="max-h-screen flex absolute top-24">
       <aside class="w-64 h-full max-h-screen fixed left-0 flex flex-col items-center pt-2 shadow-xl">
-        <div class="w-5/6 h-12 flex gap-3 items-center justify-evenly rounded-xl px-2 mb-2 bg-night-800">
-          <button class="w-2/4 h-4/5 rounded-lg flex items-center justify-evenly text-sm font-semibold bg-purple-500">Casino</button>
-          <button class="w-2/4 h-4/5 rounded-lg flex items-center justify-evenly text-sm font-semibold">Games</button>
+        <div class="w-5/6 h-12 flex gap-3 items-center justify-between rounded-xl px-2 mb-2">
+          <p class="text-[12px] text-gray-400">Menu Bar</p>
+          <button class="w-1/4 h-4/5 rounded-lg flex items-center justify-evenly text-sm font-semibold bg-night-800"><</button>
         </div>
         <nav class="w-5/6 h-[500px] flex flex-col rounded-xl">
           <ul class="w-full h-full flex flex-col gap-1">

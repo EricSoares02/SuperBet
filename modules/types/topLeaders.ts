@@ -1,7 +1,9 @@
 
 export type TopLeaderType = {
-    name: string,
-    photo: string,
-    totalWin: string,
-    lastWin: string
+    nickname: string,
+    avatar: string,
+    ticketsQuantity: number,
+    date: string,
+    selectedNumber: number,
+    valueWin: string
 }

@@ -9,35 +9,46 @@ definePageMeta({
 
 const topLeaders: Array<TopLeaderType> = [
   {
-    name: "Marcinha",
-    totalWin: "$744",
-    lastWin: "$244",
-    photo: "https://lh3.google.com/u/0/d/1RQE0Y9X3m6SNlxJ3z7aCdN29uJ84m6Zc",
+    nickname: "Marcinha",
+    valueWin: "$744",
+    avatar: "https://lh3.google.com/u/0/d/1RQE0Y9X3m6SNlxJ3z7aCdN29uJ84m6Zc",
+    date: "2024.04.10 12:30",
+    selectedNumber: 123456,
+    ticketsQuantity: 2
   },
   {
-    name: "Everaldo",
-    totalWin: "$744",
-    lastWin: "$244",
-    photo: "https://lh3.google.com/u/0/d/1RQE0Y9X3m6SNlxJ3z7aCdN29uJ84m6Zc",
+    nickname: "Everaldo",
+    valueWin: "$744",
+    avatar: "https://lh3.google.com/u/0/d/1RQE0Y9X3m6SNlxJ3z7aCdN29uJ84m6Zc",
+    date: "2024.04.10 12:30",
+    selectedNumber: 123456,
+    ticketsQuantity: 2
   },
   {
-    name: "Davi",
-    totalWin: "$744",
-    lastWin: "$244",
-    photo: "https://lh3.google.com/u/0/d/1RQE0Y9X3m6SNlxJ3z7aCdN29uJ84m6Zc",
+    nickname: "Davi",
+    valueWin: "$744",
+    avatar: "https://lh3.google.com/u/0/d/1RQE0Y9X3m6SNlxJ3z7aCdN29uJ84m6Zc",
+    date: "2024.04.10 12:30",
+    selectedNumber: 123456,
+    ticketsQuantity: 2
   },
   {
-    name: "Giselle",
-    totalWin: "$744",
-    lastWin: "$244",
-    photo: "https://lh3.google.com/u/0/d/1RQE0Y9X3m6SNlxJ3z7aCdN29uJ84m6Zc",
+    nickname: "Giselle",
+    valueWin: "$744",
+    avatar: "https://lh3.google.com/u/0/d/1RQE0Y9X3m6SNlxJ3z7aCdN29uJ84m6Zc",
+    date: "2024.04.10 12:30",
+    selectedNumber: 123456,
+    ticketsQuantity: 2
   },
   {
-    name: "Eu",
-    totalWin: "$744",
-    lastWin: "$244",
-    photo: "https://lh3.google.com/u/0/d/1RQE0Y9X3m6SNlxJ3z7aCdN29uJ84m6Zc",
+    nickname: "Eu",
+    valueWin: "$744",
+    avatar: "https://lh3.google.com/u/0/d/1RQE0Y9X3m6SNlxJ3z7aCdN29uJ84m6Zc",
+    date: "2024.04.10 12:30",
+    selectedNumber: 123456,
+    ticketsQuantity: 2
   },
+
 ];
 </script>
 
@@ -56,8 +67,8 @@ const topLeaders: Array<TopLeaderType> = [
       </div>
     </section>
 
-    <section class="w-full h-72 mb-2">
-      <div class="w-full h-1/3 flex items-center justify-between px-3">
+    <section class="w-full h-96 mb-2">
+      <div class="w-full h-1/4 flex items-center justify-between px-3">
         <div class="flex w-1/3 h-full items-center justify-between">
           <h1 class="text-lg font-bold text-nowrap">TOP LEADERS</h1>
           <span class="bg-white mx-4 h-2/4 w-px text-[1px]">l</span>
@@ -69,15 +80,15 @@ const topLeaders: Array<TopLeaderType> = [
         <button>See more</button>
       </div>
 
-      <div class="w-full h-2/3 flex items-center">
-        <ul class="w-full h-full flex gap-6">
+      <div class="w-full h-3/4 flex items-center">
+        <ul class="w-full h-full flex flex-col gap-1">
           <TopLeaders :leader="topLeaders" />
         </ul>
       </div>
     </section>
 
     <GameConteiner section-name="Casino Games"/>
-    <GameConteiner section-name="Casino Games"/>
+    <GameConteiner section-name="Tente a Sorte"/>
   </div>
 </template>
 
