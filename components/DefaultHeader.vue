@@ -26,7 +26,7 @@ defineProps<{
           <span class="text-sm">{{ data.money }}</span>
         </div>
         <div class="w-1/3 h-full flex justify-start items-center pl-10">
-            <img :src="data.avatar" alt="User" class="w-12 h-12 object-cover rounded-full">
+            <img src="/public/dog.jpg" alt="User" class="w-12 h-12 object-cover rounded-full">
         </div>
       </div>
     </header>

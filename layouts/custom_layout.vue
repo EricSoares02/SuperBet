@@ -3,8 +3,7 @@
 import HomeIcon from '~/components/icons/HomeIcon.vue';
 import UserIcon from '~/components/icons/UserIcon.vue';
 import type { UserHeaderType } from '~/modules/types/user';
-
-
+import { ref, watch } from 'vue';
 
 const user: UserHeaderType = {
   nickname: 'Eric Soares',
@@ -18,19 +17,20 @@ const buttonSettings = {
 }
 
 
+
 </script>
 
 <template>
-  <div class="w-screen h-screen bg-midnight block text-white">
+  <div class="w-screen h-screen bg-midnight block text-white ">
     
     <DefaultHeader :data="user"/>
 
 
-    <main class="max-h-screen flex absolute top-24">
-      <aside class="w-64 h-full max-h-screen fixed left-0 flex flex-col items-center pt-2 shadow-xl">
+    <main class="w-full max-h-screen flex absolute top-24">
+      <aside class="w-2/12 h-full max-h-screen fixed left-0 flex flex-col items-center pt-2 shadow-xl max-xl:w-1/5">
         <div class="w-5/6 h-12 flex gap-3 items-center justify-between rounded-xl px-2 mb-2">
           <p class="text-[12px] text-gray-400">Menu Bar</p>
-          <button class="w-1/4 h-4/5 rounded-lg flex items-center justify-evenly text-sm font-semibold bg-night-800"><</button>
+          <button class="w-1/4 h-4/5 rounded-lg flex items-center justify-evenly text-sm font-semibold bg-night-800">X</button>
         </div>
         <nav class="w-5/6 h-[500px] flex flex-col rounded-xl">
           <ul class="w-full h-full flex flex-col gap-1">
@@ -59,7 +59,8 @@ const buttonSettings = {
           </ul>
         </nav>
       </aside>
-      <div class="relative left-80 w-screen max-w-[90rem] h-full max-h-screen">
+
+      <div class="relative left-80 w-10/12 h-full max-2xl:left-60 max-xl:w-4/5">
           <slot/>
       </div>   
     </main>

@@ -53,7 +53,7 @@ const topLeaders: Array<TopLeaderType> = [
 </script>
 
 <template>
-  <div id="homeDiv" class="w-11/12 h-[52rem] max-h-svh block overflow-y-scroll">
+  <div id="homeDiv" class="w-11/12 max-w-[90%] h-[52rem] max-h-svh flex flex-col items-center overflow-y-scroll">
     <section class="w-full h-80 mb-10">
       <div class="w-full h-full bg-slider rounded-3xl flex">
         <div class="w-1/2 h-full flex flex-col gap-4 p-14">
